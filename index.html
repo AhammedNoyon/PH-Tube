@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="w-11/12 mx-auto">
+    <header>
+      <nav class="flex justify-between items-center pt-10">
+        <!-- logo  -->
+        <div>
+          <img src="assets/Logo.png" alt="navbar logo" />
+        </div>
+        <!-- Search  -->
+        <div class="flex gap-2">
+          <div>
+            <label class="input input-bordered flex items-center gap-2">
+              <input type="text" class="grow" placeholder="Search" />
+            </label>
+          </div>
+          <div>
+            <button class="btn">Search</button>
+          </div>
+        </div>
+        <!-- Blog -->
+        <div>
+          <button class="btn btn-error">Blog</button>
+        </div>
+      </nav>
+      <div class="border mt-6"></div>
+      <!-- dynamic button  -->
+      <div id="dynamic-btn"></div>
+    </header>
+    <script src="js/script.js"></script>
+  </body>
+</html>
